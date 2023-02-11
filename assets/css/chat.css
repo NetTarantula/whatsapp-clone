@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: SEGOEUI;
+    src: url(../fonts/SEGOEUI.TTF);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#009688 0%, #008968 130px, #d9dbd5 130px, #d9dbd5 100%);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #c3c5c5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #CED0D1;
+}
+
+.container {
+    position: relative;
+    width: 1496px;
+    max-width: 100%;
+    height: calc(100vh - 40px);
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.06);
+    display: flex;
+    transition: 0.5s;
+}
+
+.container .leftSide {
+    position: relative;
+    flex: 31%;
+    /* min-width: 420px; */
+    background: #fff;
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.container .rightSide {
+    position: relative;
+    flex: 69%;
+    background: #e5ddd5;
+}
+
+.container .rightSide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/Background/pattern.png');
+    opacity: 0.03;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #F0F2F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    border-right: 1px solid #D1D7DB;
+
+}
+
+.userimg {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav_icons {
+    display: flex;
+}
+
+.nav_icons li {
+    display: flex;
+    list-style-type: none;
+    cursor: pointer;
+    color: #51585c;
+    font-size: 20px;
+    margin: 0px 5px 0px 20px;
+}
+.nav_icons li a{
+    text-decoration: none;
+    color: unset;
+}
+
+.nav_icons li ul{
+    position: fixed;
+    margin-top: 25px;
+    margin-left: -180px;
+    display: none;
+    z-index: 1;
+    border-radius: 3px;
+    width: 200px;
+    padding: 10px 0px;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 0px rgba(5, 3, 3, 0.521);
+}
+
+.nav_icons li ul li {
+    list-style: none;
+    cursor: pointer;
+    margin: unset;
+    padding: 10px 0px;
+}
+
+.nav_icons li ul li a {
+    width: 100%;
+    margin: 0px 15px;
+    font-family: SEGOEUI;
+    font-size: 14.5px;
+    font-weight: 400;
+    color: rgba(102, 119, 129);
+    text-decoration: none;
+}
+.nav_icons li ul li:hover {
+    background-color: #F0F2F5;
+}
+
+.search_chat {
+    position: relative;
+    width: 100%;
+    height: 57px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.search_chat ion-icon {
+    font-size: 25px;
+    margin-top: 15px;
+    color: #51585c;
+}
+
+.search_chat div {
+    width: 100%;
+}
+
+.search_chat div input {
+    width: 97%;
+    outline: none;
+    border: none;
+    background: #F0F2F5;
+    padding: 6px;
+    margin-top: 10px;
+    height: 38px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-left: 65px;
+}
+
+.search_chat div input::placeholder {
+    color: rgba(102, 119, 129);
+}
+
+.search_chat div ion-icon {
+    position: absolute;
+    left: 30px;
+    top: 6px;
+    font-size: 15px;
+}
+
+.chatlist {
+    position: relative;
+    height: calc(100% - 116px);
+    /*60+50=110 */
+    overflow-y: auto;
+    scroll-margin-block: 0px;
+}
+
+.chatlist .block {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+}
+
+.chatlist .block:hover {
+    background-color: #F0F2F5;
+}
+
+.chatlist .block:hover .right button {
+    visibility: visible;
+}
+
+.chatlist .block:hover .right #ctlButton ion-icon {
+    visibility: none;
+}
+
+.chatlist .block .imgbox {
+    position: relative;
+    width: 55px;
+    height: 44px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.chatlist .block .details {
+    position: relative;
+    width: 100%;
+}
+
+.chatlist .block .details {}
+
+.chatlist .block .details h4 {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    font-family: SEGOEUI;
+    color: rgba(17, 27, 33, 0.884);
+}
+
+.chatlist .block .details .message_p {
+    display: flex;
+}
+
+.chatlist .block .details .message_p ion-icon {
+    color: rgba(102, 119, 129);
+    margin-right: 4px;
+    font-size: 20px;
+}
+
+.chatlist .block .details .message_p p {
+    font-size: 14px;
+    color: rgba(102, 119, 129);
+}
+
+.chatlist .block .right {
+    position: relative;
+}
+
+.chatlist .block .right .time {
+    color: rgba(102, 119, 129);
+    font-size: 14px;
+}
+
+.chatlist .block .right button {
+    background: none;
+    border: none;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.chatlist .block .right button ion-icon {
+    color: rgba(102, 119, 129);
+    position: relative;
+    top: 10px;
+}
+
+.chatlist .block .right ul{
+    position: fixed;
+    margin-top: 30px;
+    display: none;
+    z-index: 1;
+    width: 200px;
+    padding: 10px 0px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 0px rgba(5, 3, 3, 0.521);
+}
+
+.chatlist .block .right ul li {
+    list-style: none;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+.chatlist .block .right ul li a {
+    margin: 0px 15px;
+    font-family: SEGOEUI;
+    font-size: 14.5px;
+    font-weight: 400;
+    color: rgba(102, 119, 129);
+    text-decoration: none;
+}
+
+.chatlist .block .right ul li:hover {
+    background-color: #F0F2F5;
+}
+
+.imgText{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgText h4{
+    font-weight: 500;
+    font-family: SEGOEUI;
+    line-height: 1.2em;
+    margin-left: 15px;
+}
+.imgText h4 span{
+    font-size: 14px;
+    color: #555;
+    display: block;
+}
+
+/* chatbox */
+
+.chatBox{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 120px);
+    padding: 50px;
+    overflow-y: auto;
+}
+
+.chatBox .message{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 5px 0px;
+
+}
+
+.chatBox .message p{
+    position: relative;
+    right: 0px;
+    text-align: right;
+    max-width: 65%;
+    padding: 12px;
+    background: #dcf8c6;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.chatBox .message p::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg,#dcf8c6 0%,#dcf8c6 50%,transparent 50%,transparent);
+}
+.chatBox .message p span{
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.chatBox .my_message{
+    justify-content: flex-end;
+}
+.chatBox .frnd_message{
+    justify-content: flex-start;
+}
+
+.chatBox .frnd_message p{
+    background: #fff;
+    text-align: left;
+}
+.chatBox .frnd_message p::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -12px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(225deg,#fff 0%,#fff 50%,transparent 50%,transparent);
+}
+
+.chatBox_Input{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #F0F2F5;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chatBox_Input ion-icon{
+    cursor: pointer;
+    font-size: 25px;
+    color: #51585c;
+}
+.chatBox_Input ion-icon:nth-child(1){
+    margin-right: 15px;
+}
+.chatBox_Input ion-icon:nth-child(2){
+    margin-right: 15px;
+}
+.chatBox_Input ion-icon:nth-child(1){
+    margin-right: 15px;
+}
+.chatBox_Input ion-icon:nth-child(4){
+    margin-left: 15px;
+}
+.chatBox_Input input{
+    position: relative;
+    width: 90%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+ /* lfs_user_slider  */
+ .container .lfs_user_slider, .container .lfs_user_communities,.container .lfs_user_msgChat{
+    position: relative;
+    flex: 31%;
+    /* min-width: 420px; */
+    background: #F0F2F5;
+    display: none;
+}
+.container .lfs_user_slider .pr_header,.container .lfs_user_communities .pr_header,.container .lfs_user_msgChat .pr_header{
+    height: 110px;
+    width: 100%;
+    background-color: #008069;
+    display: flex;
+    position: relative;
+}
+.container .lfs_user_slider .pr_header h4,.container .lfs_user_communities .pr_header h4,.container .lfs_user_msgChat .pr_header h4{
+    color: #F0F2F5;
+    font-size: 18px;
+    margin-left: 35px;
+    margin-top: 60px;
+    font-weight: 700;
+    font-family: SEGOEUI;
+}
+.container .lfs_user_slider .pr_header a,.container .lfs_user_communities .pr_header a,.container .lfs_user_msgChat .pr_header a{
+}
+.container .lfs_user_slider .pr_header a i,.container .lfs_user_communities .pr_header a i,.container .lfs_user_msgChat .pr_header a i{
+    font-size: 21px;
+    margin-left: 35px;
+    margin-top: 60px;
+    color: #f0f2f5d3;
+    position: relative;
+}
+
+.chatbox_usermenu,.chatbox_searchmenu{
+    position: relative;
+    /* flex: 69%; */
+    flex: 30%;
+    display: none;
+    min-height: 100%;
+    background: #d5d9dfb9;
+}
+.chatbox_usermenu .ctbx_header,.chatbox_searchmenu .ctbx_header{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #F0F2F5;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-right: 1px solid #D1D7DB;
+}
+.chatbox_usermenu .ctbx_header a,.chatbox_searchmenu .ctbx_header a{}
+.chatbox_usermenu .ctbx_header a i,.chatbox_searchmenu .ctbx_header a i{
+    color: #54656F;
+    margin-left: 10px;
+    font-size: 22px;
+}
+.chatbox_usermenu .ctbx_header h4,.chatbox_searchmenu .ctbx_header h4{
+    font-size: 19px;
+    font-weight: 500;
+    font-family: SEGOEUI;
+    color: rgba(17, 27, 33, 0.884);
+    margin-left: 25px;
+}

@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/chat.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--  lfs_user_slider -->
+        <div class="lfs_user_slider">
+            <div class="pr_header">
+                <a id="close_slmenu" href="#"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
+                <h4>Profile</h4>
+            </div>
+        </div>
+        <!--  lfs_user_communities -->
+        <div class="lfs_user_communities">
+            <div class="pr_header">
+                <a id="com_close" href="#"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
+                <h4>Communities</h4>
+            </div>
+        </div>
+        <!--  lfs_user_msgChat -->
+        <div class="lfs_user_msgChat">
+            <div class="pr_header">
+                <a id="msgChat_close" href="#"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
+                <h4>New chat</h4>
+            </div>
+        </div>
+        <!--left side-->
+        <div class="leftSide">
+            <!-- header -->
+            <div class="header">
+                <div class="userimg">
+                    <a id="lfs_user_btn" href="#"><img class="cover" src="../images/User/user.jpg" alt="userimg"></a>
+                </div>
+                <ul class="nav_icons">
+                    <li><a id="com_open" href="#"><i class="fa-solid fa-users"></i></a></li>
+                    <li><a href="#"><ion-icon name="scan-circle-outline"></ion-icon></a></li>
+                    <li><a id="msgChat_open" href="#"><ion-icon name="chatbox"></ion-icon></a></li>
+                    <li><a id="hdr_menu_button" href="#"><ion-icon name="ellipsis-vertical"></ion-icon></a>
+                        <ul id="hdr_dot_menu">
+                            <li><a href="#">New group</a></li>
+                            <li><a href="#">New community</a></li>
+                            <li><a href="#">Archive</a></li>
+                            <li><a href="#">Started message</a></li>
+                            <li><a href="#">Setting</a></li>
+                            <li><a href="#">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- search -->
+            <div class="search_chat">
+                <div>
+                    <input type="text" placeholder="Search or start new chat">
+                    <ion-icon name="search-outline"></ion-icon>
+                </div>
+                <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+            </div>
+            <!-- chat list -->
+            <div class="chatlist">
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img1.jpg" alt="userimage1">
+                    </div>
+                    <div class="details">
+                        <h4>Muhammad Shayan</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img2.jpg" alt="userimage2">
+                    </div>
+                    <div class="details">
+                        <h4>Frederick Calderwood</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton1">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu1">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img3.jpg" alt="userimage3">
+                    </div>
+                    <div class="details">
+                        <h4>Catherine Miller</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton2">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu2">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img4.jpg" alt="userimage4">
+                    </div>
+                    <div class="details">
+                        <h4>Mary Alexander</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton3">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu3">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img5.jpg" alt="userimage5">
+                    </div>
+                    <div class="details">
+                        <h4>Patricia Castle</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton4">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu4">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img6.jpg" alt="userimage6">
+                    </div>
+                    <div class="details">
+                        <h4>George Lomas</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton5">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu5">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img7.jpg" alt="userimage7">
+                    </div>
+                    <div class="details">
+                        <h4>James Arendt</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton6">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu6">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img8.jpg" alt="userimage8">
+                    </div>
+                    <div class="details">
+                        <h4>Willie Evans</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton7">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu7">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img9.jpg" alt="userimage9">
+                    </div>
+                    <div class="details">
+                        <h4>Martha Bourgeois</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton8">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu8">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img1.jpg" alt="userimage1">
+                    </div>
+                    <div class="details">
+                        <h4>James Steadman</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton9">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu9">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img2.jpg" alt="userimage2">
+                    </div>
+                    <div class="details">
+                        <h4>James Parks</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton10">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu10">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img3.jpg" alt="userimage3">
+                    </div>
+                    <div class="details">
+                        <h4>Donna Johnson</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton11">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu11">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img4.jpg" alt="userimage4">
+                    </div>
+                    <div class="details">
+                        <h4>Candice Marshall</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton12">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu12">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img5.jpg" alt="userimage5">
+                    </div>
+                    <div class="details">
+                        <h4>Muhammad Shayan</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton13">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu13">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img6.jpg" alt="userimage6">
+                    </div>
+                    <div class="details">
+                        <h4>Muhammad Shayan</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton14">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu14">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img7.jpg" alt="userimage7">
+                    </div>
+                    <div class="details">
+                        <h4>Muhammad Shayan</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton15">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu15">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img8.jpg" alt="userimage8">
+                    </div>
+                    <div class="details">
+                        <h4>Muhammad Shayan</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton16">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu16">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img class="cover" src="../images/User/img9.jpg" alt="userimage9">
+                    </div>
+                    <div class="details">
+                        <h4>Muhammad Shayan</h4>
+                        <div class="message_p">
+                            <ion-icon name="camera"></ion-icon>
+                            <p> Photo</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="time">10:45</p>
+                        <button id="ctlButton17">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <ul id="ctlMenu17">
+                            <li><a href="#">Archive chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Pin chat</a></li>
+                            <li><a href="#">Mark as unread</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--right side-->
+        <div id="rightSides" class="rightSide">
+            <div class="header">
+                <div class="imgText">
+                    <div class="userimg">
+                        <a onclick="chatbox_usermenu_open()" href="#"><img class="cover" src="../images/User/img1.jpg" alt="userimg"></a>
+                    </div>
+                    <h4>Muhammad Shayan<br><span>online</span></h4>
+                </div>
+                <ul class="nav_icons">
+                    <li><a onclick="chatbox_searchmenu_open()" href="#">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </a></li>
+                    <li><a id="chat_hdr_menu_button" href="#"><ion-icon name="ellipsis-vertical"></ion-icon></a>
+                        <ul id="chat_hdr_dot_menu">
+                            <li><a href="#">Contact info</a></li>
+                            <li><a href="#">Select message</a></li>
+                            <li><a href="#">Close chat</a></li>
+                            <li><a href="#">Mute notifications</a></li>
+                            <li><a href="#">Disappearings messages</a></li>
+                            <li><a href="#">Clear message</a></li>
+                            <li><a href="#">Delete chat</a></li>
+                            <li><a href="#">Report</a></li>
+                            <li><a href="#">Block</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- chatBox-->
+            <div class="chatBox">
+                <div class="message my_message">
+                    <p>hi <br><span>12:30</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p>hello <br><span>12:30</span></p>
+                </div>
+                <div class="message my_message">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, vel.consectetur adipisicing
+                        elit.Autem, vel <br><span>12:15</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p>Lorem ipsum dolor sit amet. <br><span>12:15</span></p>
+                </div>
+                <div class="message my_message">
+                    <p>Lorem ipsum dolor sit amet consectetur <br><span>12:10</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p>Lorem ipsum dolor sit adipisicing elit. Autem, vel. amet. Lorem ipsum dolor sit adipisicing elit.
+                        Autem, vel. amet.<br><span>12:11</span></p>
+                </div>
+                <div class="message my_message">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, nihil. <br><span>12:08</span>
+                    </p>
+                </div>
+                <div class="message frnd_message">
+                    <p>Lorem ipsum dolor sit adipisicing elit. Autem, vel. amet. <br><span>12:08</span></p>
+                </div>
+                <div class="message my_message">
+                    <p>Ok <br><span>12:05</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p>Lorem ipsum dolor sit adipisicing elit. Autem, vel. amet. <br><span>12:05</span></p>
+                </div>
+                <div class="message my_message">
+                    <p>hi <br><span>12:30</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p>hello <br><span>12:30</span></p>
+                </div>
+                <div class="message my_message">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, vel. <br><span>12:15</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p>Lorem ipsum dolor sit amet. <br><span>12:15</span></p>
+                </div>
+                <div class="message my_message">
+                    <p>Lorem ipsum dolor sit amet consectetur <br><span>12:10</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p>Lorem ipsum dolor sit adipisicing elit. Autem, vel. amet. <br><span>12:11</span></p>
+                </div>
+                <div class="message my_message">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, nihil. <br><span>12:08</span>
+                    </p>
+                </div>
+                <div class="message frnd_message">
+                    <p>Lorem ipsum dolor sit adipisicing elit. Autem, vel. amet. <br><span>12:08</span></p>
+                </div>
+            </div>
+            <!--chatBox input-->
+            <div class="chatBox_Input">
+                <ion-icon name="happy-outline"></ion-icon>
+                <ion-icon name="attach-outline"></ion-icon>
+                <input type="text" placeholder="type a message">
+                <ion-icon name="mic"></ion-icon>
+            </div>
+        </div>
+        <!--chatbox_usermenu -->
+        <div class="chatbox_usermenu">
+            <div class="ctbx_header">
+                <a onclick="chatbox_usermenu_close()" href="#"><i class="fa-sharp fa-solid fa-xmark"></i></a>
+                <h4>Contact info</h4>
+            </div>
+        </div>
+        <!--chatbox_searchmenu -->
+        <div class="chatbox_searchmenu">
+            <div class="ctbx_header">
+                <a onclick="chatbox_searchmenu_close()" href="#"><i class="fa-sharp fa-solid fa-xmark"></i></a>
+                <h4>Search Message</h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
+    <script>
+
+
+        // var ctlButton = document.querySelector("#ctlButton");
+        // var ctlMenu = document.querySelector("#ctlMenu");
+
+        // ctlButton.addEventListener("click", function () {
+        //     ctlMenu.style.visibility = "visible";
+        //     ctlMenu.idList.toggle("show");
+        // });
+
+
+
+
+        // function ctlMenuBlock() {
+        //     document.querySelector('#ctlMenu').style.visibility = 'visible';
+        // }
+
+
+
+        //chat list block 
+        $("#ctlButton").click(function () {
+            $("#ctlMenu").toggle();
+        });
+        $("#ctlButton1").click(function () {
+            $("#ctlMenu1").toggle();
+        });
+        $("#ctlButton2").click(function () {
+            $("#ctlMenu2").toggle();
+        });
+        $("#ctlButton3").click(function () {
+            $("#ctlMenu3").toggle();
+        });
+        $("#ctlButton4").click(function () {
+            $("#ctlMenu4").toggle();
+        });
+        $("#ctlButton5").click(function () {
+            $("#ctlMenu5").toggle();
+        });
+        $("#ctlButton6").click(function () {
+            $("#ctlMenu6").toggle();
+        });
+        $("#ctlButton7").click(function () {
+            $("#ctlMenu7").toggle();
+        });
+        $("#ctlButton8").click(function () {
+            $("#ctlMenu8").toggle();
+        });
+        $("#ctlButton9").click(function () {
+            $("#ctlMenu9").toggle();
+        });
+        $("#ctlButton10").click(function () {
+            $("#ctlMenu10").toggle();
+        });
+        $("#ctlButton11").click(function () {
+            $("#ctlMenu11").toggle();
+        });
+        // left side header 3 dot icon menu
+        $("#hdr_menu_button").click(function () {
+            $("#hdr_dot_menu").toggle();
+        });
+        // right side header 3 dot menu
+        $("#chat_hdr_menu_button").click(function () {
+            $("#chat_hdr_dot_menu").toggle();
+        });
+        // right side header 3 dot menu
+        $("#lfs_user_btn").click(function () {
+            $(".leftSide").hide();
+            $(".lfs_user_slider").show();
+        });
+        $("#close_slmenu").click(function () {
+            $(".leftSide").show();
+            $(".lfs_user_slider").hide();
+        });
+        // left side communities menu
+        $("#com_open").click(function () {
+            $(".leftSide").hide();
+            $(".lfs_user_communities").show();
+        });
+        $("#com_close").click(function () {
+            $(".leftSide").show();
+            $(".lfs_user_communities").hide();
+        });
+        // left side msgChat menu
+        $("#msgChat_open").click(function () {
+            $(".leftSide").hide();
+            $(".lfs_user_msgChat").show();
+        });
+        $("#msgChat_close").click(function () {
+            $(".leftSide").show();
+            $(".lfs_user_msgChat").hide();
+        });
+        // chatbox_usermenu menu
+        // $("#chatbox_usermenu_open").click(function () {
+        //     $(".chatbox_usermenu").show();
+        //     document.querySelector('rightSide').style.flex = '39%';
+        // });
+
+        // left side msgChat menu
+        function chatbox_usermenu_open(){
+            document.querySelector(".rightSide").style.flex="39%";
+            document.querySelector(".chatbox_usermenu").style.display="block";
+        }
+        function chatbox_usermenu_close(){
+            document.querySelector(".rightSide").style.flex="69%";
+            document.querySelector(".chatbox_usermenu").style.display="none";
+        }
+        // left side msgChat menu
+        function chatbox_searchmenu_open(){
+            document.querySelector(".rightSide").style.flex="39%";
+            document.querySelector(".chatbox_searchmenu").style.display="block";
+            document.querySelector(".chatbox_usermenu").style.display="none";
+        }
+        function chatbox_searchmenu_close(){
+            document.querySelector(".rightSide").style.flex="69%";
+            document.querySelector(".chatbox_searchmenu").style.display="none";
+            document.querySelector(".chatbox_usermenu").style.display="none";
+        }
+    </script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

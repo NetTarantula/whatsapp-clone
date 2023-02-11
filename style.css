@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 200vh;
+    background: linear-gradient(#00A884 0%, #00A884 200px, #F0F2F5 200px, #F0F2F5 100%);
+}
+
+.container {
+    position: absolute;
+    top: 125px;
+    width: 965px;
+    /* max-width: 100%; */
+    height: 1000px;
+    /* height: calc(900px - 200px); */
+    background: #fff;
+    color: rgba(65, 82, 93, 0.795);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+}
+
+.container .header{
+    position: absolute;
+    top: -105px;
+    display: flex;
+}
+.container .header img{
+    /* color: #00E676; */
+    width: 60px;
+    height: 60px;
+}
+.container .header span{
+    width: 130px;
+    position: absolute;
+    top: 23px;
+    left: 62px;
+    color: rgb(255,255,255);
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+.container .login{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 75px 0px;
+    display: flex;
+    background-color: #FFFFFF;
+}
+.container .login .text{
+    position: absolute;
+    width: 60%;
+    left: 50px;
+}
+.container .login .text h3{
+    font-size: 28px;
+    color: #8E999F;
+    font-weight: 300;
+    margin: 10px 0px;
+}
+.container .login .text ol{
+    margin: 50px 0px 0px 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+.container .login .text ol li{
+    margin-top: 20px;
+}
+.container .login .qr{
+    position: absolute;
+    width: 40%;
+    right: 0px;
+}
+.container .login .qr img{
+    float: right;
+    margin-right: 60px;
+}
+.container .video{
+    position: absolute;
+    top: 450px;
+    width: 100%;
+    height: 55%;
+    background-color: #F9F9FA;
+    text-align: center;
+    justify-content: center;
+}
+
+.container .video h3{
+    font-size: 28px;
+    font-weight: 300;
+    margin: 35px 0px 15px 0px;
+}
+.container .video a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #128A7E;
+    margin-bottom: 30px;
+}
+.container .video img{
+    position: relative;
+    left: 50px;
+}
+.container .video #play-button{
+    height: 110px;
+    font-size: 90px;
+    position: relative;
+    left: -275px;
+    cursor: pointer;
+    top: -116px;
+    color: #323232;
+    background: none;
+    border: none;
+}
+.container .video #myVideo{
+    width: 569px;
+    height: 341px;
+    display: none;
+    position: relative;
+    top: -338px;
+    left: 193px;
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./assets/images/logo/WhatsApp-Logo.wine.svg" alt="WhatsApp-Logo.wine">
+            <span>WhatsApp web</span>
+        </div>
+        <div class="login">
+            <div class="text">
+                <h3>Use WhatsApp on your computer</h3>
+                <ol>
+                    <li>Open WhatsApp on your phone</li>
+                    <li>
+                        <span>Tap <strong>Menu </strong> or <strong> Settings </strong> and select <strong>Linked
+                                Devices</strong>
+                        </span>
+                    </li>
+                    <li><span>Tap on <strong>Link a Device</strong></span></li>
+                    <li>Point your phone to this screen to capture the code</li>
+                </ol>
+            </div>
+            <div class="qr">
+                <a href="./assets/pages/chat.html"><img src="./assets/images/qrcode/qr.png" alt="qr"></a>
+            </div>
+        </div>
+        <div class="video">
+            <h3>Tutorial</h3>
+            <a href="#" onclick="bgchange()">Need help to get started?</a>
+            <img src="./assets/images/thamnail/qr-video_0c6ec69b054fdeb31cf3e5e10290fd8e.png" alt="thamnail">
+            <button onclick="loginsheow()" id="play-button">
+                <ion-icon name="play-circle-outline"></ion-icon>
+            </button>
+            <video id="myVideo">
+                <source src="./assets/video/thumbnail.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- <button id="play-button">Play Video</button> -->
+    <!-- <video id="myVideo" style="display:none;">
+        <source src="/assets/video/thumbnail.mp4" type="video/mp4">
+    </video> -->
+
+
+    <script>
+        const playButton = document.getElementById("play-button");
+        const myVideo = document.getElementById("myVideo");
+
+        playButton.addEventListener("click", function () {
+            myVideo.style.display = "block";
+            myVideo.play();
+        });
+
+
+
+        function bgchange() {
+            document.querySelector('.login').style.display = 'none';
+        }
+        function loginsheow() {
+            document.querySelector('.login').style.display = 'block';
+        }
+    </script>
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
